@@ -27,6 +27,12 @@ class Tolkapiyam:
     
     def getiyals(self, number):
         return [iyal.name for iyal in self.adhigaram[number].iyals]
+
+    def getnoorpa(self, n, f):
+        return[i.paadal for i in self.adhigaram[n].iyals[f].noorpa]
+    
+    def vilakkam(self, n , f):
+        return[i.vilakkam for i in self.adhigaram[n].iyals[f].noorpa]
     
     def __init__(self):
         self.adhigaram = []
